@@ -30,10 +30,13 @@ hasil += angka1;
 }
 }
 public void pembagian(){
-for(int i=0;i<angka2;i++){
+if(angka1<angka2){}
+else{
 
-}
-}
+ for(double j=(angka1-angka2);j>=(angka1%angka2);j-=angka2){
+     hasil +=1;
+    }
+}}
 public double infohasil(){
 return  hasil;
 }
