@@ -358,6 +358,13 @@ public class NewJFrame extends javax.swing.JFrame {
             jawaban = String.format("%.1f",perk);
             jTextField1.setText(jawaban);
             break;
+                
+            case ":":
+            oper.pembagian();
+            double pemb = oper.infohasil();
+            jawaban = String.format("%.1f",pemb);
+            jTextField1.setText(jawaban);
+            break;
         }
     }//GEN-LAST:event_jButton12ActionPerformed
 
@@ -432,6 +439,12 @@ public class NewJFrame extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+      angka1 =Double.parseDouble(jTextField1.getText());
+      jTextField1.setText("");
+      operasi=":";
+    }
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
